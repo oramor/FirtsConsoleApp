@@ -2,16 +2,14 @@
 {
     private static void Main()
     {
-        Console.WriteLine("Hello, J!");
+        var s = Convert.ToString((int)SomeEnum.Two);
+        Console.WriteLine(s);
     }
 }
 
-interface ILabel
+enum SomeEnum
 {
-    string Name { get; init; }
-}
-
-class Label
-{
-
+    One = 1,
+    Two = 2,
+    Three = 4
 }
